@@ -25,11 +25,23 @@
               <button type="submit" class="btn btn-light" style="height: 35px; border-radius: 50px;">Ara</button>
             </form>
         </div>
-        <div class="header-right">
-          <button style="border: 0px; padding: 0px; border-radius: 50px; background-color: orange;"><a href="LogIn.html">Giriş Yap</a></button>
-          <button style="border: 0px; padding: 0px; border-radius: 50px; background-color: orange;"><a href="Register.html">Kayıt Ol</a></button>
+        <div class="buttons">
+            <button id="login">Giriş Yap</button>
+            <button id="register">Kayıt Ol</button>
         </div>
     </div>
 </body>
   
+<script>
+
+alert("Ziyaretçi olarak geziniyorsunuz..!");
+
+    document.querySelector("#login").onclick=function(){
+        window.location.href="LogIn.html"
+    }
+    document.querySelector("#register").onclick=function(){
+        window.location.href="Register.html"
+    }
+</script>
+
 </html>

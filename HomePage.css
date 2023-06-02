@@ -14,7 +14,7 @@
     text-decoration: none;
     font-size: 18px; 
     line-height: 100px;
-    border-radius: 4px;
+    position: relative;
   }
   .logo{
     margin-left: 200px;
@@ -24,25 +24,39 @@
     float: right;
     margin-right: 200px
   }
-  
-  @media screen and (max-width: 500px) {
-    .header a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-    
-    .header-right {
-      float: none;
-    }   
+
+  .search-container{
+    display: inline-block;
+    margin-top: 50px;
+    margin-left: 450px;
+
   }
+
   .search-container button {
     float: center;
     padding: 6px 10px;
     margin-top: -1px;
-    margin-right: 16px;
-    background: #ddd;
-    font-size: 17px;
+    background: orange;
+    color: white;
+    font-size: 15px;
     border: none;
+    position: relative;
+    display: inline-block;
   }
   
+  .buttons{
+    float: right;
+    display: inline-block;
+    margin-top: 50px;
+    margin-right: 200px;
+  }
+  .buttons #login{
+    background-color: orange;
+    color: white;
+    border-radius: 10px;
+  }
+  .buttons #register{
+    background-color: orange;
+    color: white;
+    border-radius: 10px;
+  }
